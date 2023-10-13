@@ -1,13 +1,14 @@
-import {StatusBar} from 'expo-status-bar';
 import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
+import {Header} from '../src/components/Header';
+import {StatusBar} from 'expo-status-bar';
 
-export default function App() {
+export const Home = () => {
 	return (
 		<View style={styles.container}>
 			<StatusBar hidden={true} />
-			<View style={styles.logoContainer}>
-				<Image source={require('./assets/logo.png')} style={styles.logo} />
-			</View>
+			<Header>
+				<Image source={require('../assets/logo.png')} style={styles.logo} />
+			</Header>
 			<Text style={styles.hello}>
 				Bienvenue <Text style={styles.name}>Emeric</Text> !
 			</Text>
@@ -23,19 +24,13 @@ export default function App() {
 			</Pressable>
 		</View>
 	);
-}
+};
 
 const styles = StyleSheet.create({
 	container: {
 		paddingTop: 0,
 		flex: 1,
 		backgroundColor: '#fff',
-	},
-	logoContainer: {
-		width: '100%',
-		padding: 20,
-		backgroundColor: 'white',
-		elevation: 2,
 	},
 	logo: {
 		width: 60,
