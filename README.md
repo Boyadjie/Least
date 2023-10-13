@@ -1,8 +1,6 @@
 # Least
 This project is a test of react native for a school project named Least.
 
-Here is a technical documentation that explain the choices of technologies : https://longing-tick-841.notion.site/Least-Documentation-techniques-cba70ad5fc5c47febd07cdb2804b83c9?pvs=4
-
 ## How to start
 
 I've choose to use expo to have a live visualisation of the app on my phone so you'll need to install expo-go on your device.
